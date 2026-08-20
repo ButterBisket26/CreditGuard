@@ -1,0 +1,19 @@
+# Virtual environment
+venv/
+.venv/
+Env/
+
+# Environment variables
+.env
+
+# Data files (too large for GitHub)
+data/
+
+# Model and large outputs
+output/model.joblib
+output/scorecard_report.xlsx
+
+# Python cache
+__pycache__/
+*.pyc
+.ipynb_checkpoints/

@@ -1,0 +1,94 @@
+|--- sub_grade_encoded <= 9.50
+|   |--- sub_grade_encoded <= 4.50
+|   |   |--- sub_grade_encoded <= 2.50
+|   |   |   |--- emp_length_missing <= 0.50
+|   |   |   |   |--- int_rate <= 6.44
+|   |   |   |   |   |--- class: 0
+|   |   |   |   |--- int_rate >  6.44
+|   |   |   |   |   |--- class: 0
+|   |   |   |--- emp_length_missing >  0.50
+|   |   |   |   |--- home_ownership_RENT <= 0.50
+|   |   |   |   |   |--- class: 0
+|   |   |   |   |--- home_ownership_RENT >  0.50
+|   |   |   |   |   |--- class: 0
+|   |   |--- sub_grade_encoded >  2.50
+|   |   |   |--- dti <= 17.05
+|   |   |   |   |--- annual_inc <= 37006.50
+|   |   |   |   |   |--- class: 0
+|   |   |   |   |--- annual_inc >  37006.50
+|   |   |   |   |   |--- class: 0
+|   |   |   |--- dti >  17.05
+|   |   |   |   |--- home_ownership_MORTGAGE <= 0.50
+|   |   |   |   |   |--- class: 0
+|   |   |   |   |--- home_ownership_MORTGAGE >  0.50
+|   |   |   |   |   |--- class: 0
+|   |--- sub_grade_encoded >  4.50
+|   |   |--- sub_grade_encoded <= 7.50
+|   |   |   |--- term <= 48.00
+|   |   |   |   |--- emp_length_years <= -0.50
+|   |   |   |   |   |--- class: 0
+|   |   |   |   |--- emp_length_years >  -0.50
+|   |   |   |   |   |--- class: 0
+|   |   |   |--- term >  48.00
+|   |   |   |   |--- dti <= 21.63
+|   |   |   |   |   |--- class: 0
+|   |   |   |   |--- dti >  21.63
+|   |   |   |   |   |--- class: 1
+|   |   |--- sub_grade_encoded >  7.50
+|   |   |   |--- term <= 48.00
+|   |   |   |   |--- int_rate <= 11.60
+|   |   |   |   |   |--- class: 0
+|   |   |   |   |--- int_rate >  11.60
+|   |   |   |   |   |--- class: 0
+|   |   |   |--- term >  48.00
+|   |   |   |   |--- home_ownership_MORTGAGE <= 0.50
+|   |   |   |   |   |--- class: 1
+|   |   |   |   |--- home_ownership_MORTGAGE >  0.50
+|   |   |   |   |   |--- class: 0
+|--- sub_grade_encoded >  9.50
+|   |--- sub_grade_encoded <= 15.50
+|   |   |--- term <= 48.00
+|   |   |   |--- dti <= 17.06
+|   |   |   |   |--- home_ownership_MORTGAGE <= 0.50
+|   |   |   |   |   |--- class: 0
+|   |   |   |   |--- home_ownership_MORTGAGE >  0.50
+|   |   |   |   |   |--- class: 0
+|   |   |   |--- dti >  17.06
+|   |   |   |   |--- home_ownership_MORTGAGE <= 0.50
+|   |   |   |   |   |--- class: 1
+|   |   |   |   |--- home_ownership_MORTGAGE >  0.50
+|   |   |   |   |   |--- class: 0
+|   |   |--- term >  48.00
+|   |   |   |--- home_ownership_MORTGAGE <= 0.50
+|   |   |   |   |--- dti <= 19.88
+|   |   |   |   |   |--- class: 1
+|   |   |   |   |--- dti >  19.88
+|   |   |   |   |   |--- class: 1
+|   |   |   |--- home_ownership_MORTGAGE >  0.50
+|   |   |   |   |--- dti <= 19.82
+|   |   |   |   |   |--- class: 1
+|   |   |   |   |--- dti >  19.82
+|   |   |   |   |   |--- class: 1
+|   |--- sub_grade_encoded >  15.50
+|   |   |--- term <= 48.00
+|   |   |   |--- int_rate <= 21.16
+|   |   |   |   |--- dti <= 19.01
+|   |   |   |   |   |--- class: 1
+|   |   |   |   |--- dti >  19.01
+|   |   |   |   |   |--- class: 1
+|   |   |   |--- int_rate >  21.16
+|   |   |   |   |--- loan_amnt <= 3112.50
+|   |   |   |   |   |--- class: 1
+|   |   |   |   |--- loan_amnt >  3112.50
+|   |   |   |   |   |--- class: 1
+|   |   |--- term >  48.00
+|   |   |   |--- home_ownership_MORTGAGE <= 0.50
+|   |   |   |   |--- dti <= 24.41
+|   |   |   |   |   |--- class: 1
+|   |   |   |   |--- dti >  24.41
+|   |   |   |   |   |--- class: 1
+|   |   |   |--- home_ownership_MORTGAGE >  0.50
+|   |   |   |   |--- dti <= 22.66
+|   |   |   |   |   |--- class: 1
+|   |   |   |   |--- dti >  22.66
+|   |   |   |   |   |--- class: 1
